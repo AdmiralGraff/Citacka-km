@@ -2,36 +2,68 @@
 <html lang=sk dir="ltr">
   <head>
     <meta charset="utf-8">
-    <<link rel="icon" href="faviconDVP.ico">
+    <link rel="icon" href="faviconDVP.ico">
     <title>Dove-Squirrel Journeys' km calculator</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
 
-       <H1>výběr z možností tras: </H1>
-       Tlačítko: 
+       <H1>Cesty </H1>
+       <!-- <button name="spočítej" value="x+getvaluefromselect"> -->
+       <br>
+              <select name="Cesta">
+           <option value="0">– vybrat –</option>
+           <option value="V">Veverka</option>
+           <option value="D">Dodo</option>
+           <option value="VD">Dodo & Veverka </option>
+                    </select>
+                    cestoval(i) z
              <select name="Cesta">
-    <option value="0">– vybrat –</option>
-    <option value="400">horná</option>
-    <option value="500">dolná</option>
-    <option value="350">domov - BA</option>
-             </select>
-       //doplnění Výběr z možností, dolná horná 
-       
+               odkiaľ:
+    <option class="odkial" value="0">odkiaľ (vybrat)</option>
+    <option class="odkial"value="1">Brno</option>
+    <option class="odkial"value="2">Bratislava</option>
+    <option class="odkial"value="3">Košice</option>
+    <option class="odkial"value="4">Moldava n/B.</option>
+    <option class="odkial"value="5">Miskolc</option>
+    <option class="odkial"value="6">Szerencs</option>
+   </select>
+     do
+   <select name="Cesta">
 
-       Button
-       <button name="spočítej" value="x+getvaluefromselect">
+<option class="kam" value="0">kam (vybrat)</option>
+<option class="kam" value="1">Brno</option>
+<option class="kam" value="2">Bratislava</option>
+<option class="kam" value="3">Košice</option>
+<option class="kam" value="4">Moldava n/B.</option>
+<option class="kam" value="5">Miskolc</option>
+<option class="kam" value="6">Szerencs</option>
+</select>
 
-       <select name="Cesta">
-    <option value="0">– vybrat –</option>
-    <option value="V">Veverka</option>
-    <option value="D">Dodo</option>
-    <option value="VD">Dodo & Veverka </option>
-             </select>
- 
-        dátum - čas - 
+   <!-- if z/do ke&&ba -->
+<select class="" name="cesta0">
 
-        typ dopravného prostriedku (vlak, auto, autobus) 
 
+    <option value="0"> trasa (vybrat)</option>
+    <option value="445">horná</option>
+    <option value="442">dolná</option>
+          </select>
+       <!-- doplnění Výběr z možností, dolná horná -->
+<br>
+
+       <!-- Button -->
+
+
+<br>
+        dátum: <input type="date" name="datum" value="">
+        čas: <input type="time" name="" value="">
+
+        typ dopravného prostriedku: <br>
+        vlak: <input type="radio" name="doppro" value=""> <br>
+        bus: <input type="radio" name="doppro" value=""> <br>
+        auto: <input type="radio" name="doppro" value="">
+
+    <!--   (vlak, auto, autobus) -->
 
   </body>
   <foot>
