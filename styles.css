@@ -1,4 +1,3 @@
-
 button {
   border: 0;
   margin: 0;
@@ -14,4 +13,10 @@ button {
 .sumbmit {
   border-style: solid;
   border-color: black;
+}
+form {
+  margin: 1em;
+}
+.dates {
+  width: 10%;
 }
