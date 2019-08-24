@@ -1,0 +1,17 @@
+
+button {
+  border: 0;
+  margin: 0;
+}
+#foot {
+  text-align: center;
+}
+.formular {
+  margin: 2px;
+  border-style: dotted;
+  border-color: black;
+}
+.sumbmit {
+  border-style: solid;
+  border-color: black;
+}
