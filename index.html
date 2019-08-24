@@ -1,72 +1,89 @@
 <!DOCTYPE html>
 <html lang=sk dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="icon" href="faviconDVP.ico">
-    <title>Dove-Squirrel Journeys' km calculator</title>
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
 
-       <H1>Cesty </H1>
-       <!-- <button name="spočítej" value="x+getvaluefromselect"> -->
-       <br>
-              <select name="Cesta">
-           <option value="0">– vybrat –</option>
-           <option value="V">Veverka</option>
-           <option value="D">Dodo</option>
-           <option value="VD">Dodo & Veverka </option>
-                    </select>
-                    cestoval(i) z
-             <select name="Cesta">
-               odkiaľ:
-    <option class="odkial" value="0">odkiaľ (vybrat)</option>
-    <option class="odkial"value="1">Brno</option>
-    <option class="odkial"value="2">Bratislava</option>
-    <option class="odkial"value="3">Košice</option>
-    <option class="odkial"value="4">Moldava n/B.</option>
-    <option class="odkial"value="5">Miskolc</option>
-    <option class="odkial"value="6">Szerencs</option>
-   </select>
-     do
-   <select name="Cesta">
-
-<option class="kam" value="0">kam (vybrat)</option>
-<option class="kam" value="1">Brno</option>
-<option class="kam" value="2">Bratislava</option>
-<option class="kam" value="3">Košice</option>
-<option class="kam" value="4">Moldava n/B.</option>
-<option class="kam" value="5">Miskolc</option>
-<option class="kam" value="6">Szerencs</option>
-</select>
-
-   <!-- if z/do ke&&ba -->
-<select class="" name="cesta0">
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" href="faviconDVP.ico">
+  <title>Dove-Squirrel Journeys' km calculator</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="<script type=" text/javascript"> </head> <body>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <H1>Cesty </H1>
+  <div class="formular">
 
 
-    <option value="0"> trasa (vybrat)</option>
-    <option value="445">horná</option>
-    <option value="442">dolná</option>
-          </select>
-       <!-- doplnění Výběr z možností, dolná horná -->
-<br>
-
-       <!-- Button -->
+    <!-- <button name="spočítej" value="x+getvaluefromselect"> -->
+    <br>
+    <form class="cesta" action="index.html" method="post">
 
 
-<br>
-        dátum: <input type="date" name="datum" value="">
-        čas: <input type="time" name="" value="">
+      Pasažier:
+      <select name="Cesta">
+        <option value="0">– vybrat –</option>
+        <option value="V">Veverka</option>
+        <option value="D">Dodo</option>
+        <option value="VD">Dodo & Veverka </option>
+      </select>
+      <br>
+      Odkiaľ:
+      <select name="Cesta">
 
-        typ dopravného prostriedku: <br>
-        vlak: <input type="radio" name="doppro" value=""> <br>
-        bus: <input type="radio" name="doppro" value=""> <br>
-        auto: <input type="radio" name="doppro" value="">
+        <option class="odkial" value="0">odkiaľ (vybrat)</option>
+        <option class="odkial" value="1">Brno</option>
+        <option class="odkial" value="2">Bratislava</option>
+        <option class="odkial" value="3">Košice</option>
+        <option class="odkial" value="4">Moldava n/B.</option>
+        <option class="odkial" value="5">Miskolc</option>
+        <option class="odkial" value="6">Szerencs</option>
+      </select>
+      <br>
+      Kam:
+      <select name="Cesta">
 
-    <!--   (vlak, auto, autobus) -->
+        <option class="kam" value="0">kam (vybrat)</option>
+        <option class="kam" value="1">Brno</option>
+        <option class="kam" value="2">Bratislava</option>
+        <option class="kam" value="3">Košice</option>
+        <option class="kam" value="4">Moldava n/B.</option>
+        <option class="kam" value="5">Miskolc</option>
+        <option class="kam" value="6">Szerencs</option>
+      </select>
+      <br>
+      (Ak trasa KE-BA, ktorá trasa:
+      <!-- if z/do ke&&ba -->
+      <select class="" name="cesta0">
+
+
+        <option value="0"> trasa (vybrat)</option>
+        <option value="445">horná</option>
+        <option value="442">dolná</option>
+
+      </select>)
+      <!-- doplnění Výběr z možností, dolná horná -->
+
+      <!-- Button -->
+
+
+      <br>
+      Dátum: <input type="date" name="datum" value="" min="2019-03-01" max="<label for=" input type="date" onload="getDate()" class="form-control" id="date" name="date""> <br>
+                      <!-- som sa pokúšal nastaviť maxdate na dnes, ale nejde mi to :/ -->
+      Čas: <input type=" time" name="" value=""> <br>
+      Typ dopravného prostriedku: <br>
+      🚆vlak: <input type="radio" name="doppro" value=""> <br>
+      🚍bus: <input type="radio" name="doppro" value=""> <br>
+      🚘auto: <input type="radio" name="doppro" value="">
+
+      <!--   (vlak, auto, autobus) -->
+      <br>
+      <button type="button" class="btn btn-default" name="button" value="Submit">Submit</button>
+    </form>
+  </div>
 
   </body>
   <foot>
-    <p>Created by Dodo & Veverka ©</p>
+    <p id="foot">Created by Dodo & Veverka ©</p>
   </foot>
+
 </html>
